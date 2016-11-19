@@ -7,13 +7,14 @@ import ev3dev.ev3 as ev3
 import tutorial as tutorial
 import utilities
 import openLoopControl as olc
+import ultrasonic as ultrasonic
 
 print ('Welcome to ev3')
 
-ev3.Sound.speak('Welcome to e v 3').wait()
+ev3.Sound.speak('YEEZY YEEZY, WHATS GOOD, ITS YOUR BOY MAX B').wait()
 
 # Step A: Basic open driving
-tutorial.operateWheelsBasic()
+#tutorial.operateWheelsBasic()
 
 # Step B: Turn on an off an LED using a switch
 #tutorial.makeLightSwitch()
@@ -24,19 +25,23 @@ tutorial.operateWheelsBasic()
 
 # Step D: Use a class to develop a bigger program with a state
 #o = olc.openLoopControl()
-## execute (with default params)
+# execute (with default params)
 #o.operateWheels()
-#
-## update parameters
+
+# update parameters
 #o.time_to_spin = 1.0
 #o.duty_cycle_sp = 50
-#
-## execute again
+
+# execute again
 #o.operateWheels()
 
 # Step E: Record values from the ultrasonic to a text file
-# tutorial.recordUltraSonic()
+#tutorial.recordUltraSonic()
+
+# Step F: Rotate that damn ultrasonic sensor
+ultrasonic.rotateUltraSonic()
+
 
 # remove this if you want it to exit as soon as its done:
-print "wait 10sec, then end"
-time.sleep(10)
+#print "wait 10sec, then end"
+#time.sleep(5)
